@@ -1,10 +1,10 @@
 import React from 'react';
 import NewArrivalsCard from './NewArrivalsCard';
 
-export const NewArrivals = ({ recentProducts }) => {
+export const NewArrivals = ({ newest }) => {
   return (
     <div>
-      {recentProducts?.map((p) => {
+      {newest?.map((p) => {
         return (
           <div>
             <Link to={`/details/${p.id}`} key={p.id}>
