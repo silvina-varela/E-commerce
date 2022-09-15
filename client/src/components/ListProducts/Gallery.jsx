@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import GalleryCard from './GalleryCard';
+import { GalleryCard } from './GalleryCard';
 
 export const Gallery = ({ products }) => {
   return (

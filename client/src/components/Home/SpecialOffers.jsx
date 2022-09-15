@@ -1,24 +1,23 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { NewArrivalsCard } from './NewArrivalsCard';
+import { GalleryCard } from '../ListProducts/GalleryCard';
 
-export const NewArrivals = ({ newArrivals }) => {
+export const SpecialOffers = ({ offers }) => {
   return (
     <div>
-      {newArrivals?.map((p) => {
+      {offers?.map((p) => {
         return (
           <div>
             <Link to={`/details/${p.id}`} key={p.id}>
-              <NewArrivalsCard
+              <GalleryCard
                 name={p.name}
                 price={p.price}
                 image_link={p.image_link}
-                rating={p.rating}
               />
             </Link>
           </div>
         );
       })}
     </div>
-  );
-};
+  )
+}
