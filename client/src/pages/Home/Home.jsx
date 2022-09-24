@@ -24,19 +24,21 @@ export const Home = () => {
 
   const handleSeeAll = (e) => {
     e.preventDefault();
-    dispatch(setDefaultSort(e.target.value))
+    if(e.target.value === "offers") dispatch(setDefaultSort(offersArray))
+    if(e.target.value === "popular") dispatch(setDefaultSort(popularArray))
+    if(e.target.value === "newest") dispatch(setDefaultSort(newArray))
     navigate('/catalogue')
   };
 
   return (
-    <div className="font-sans text-primary">
+    <div className="font-sans">
       <div className="mx-auto max-w-2xl lg:max-w-screen-2xl">
         <div className="flex justify-between pt-20 pb-10">
-          <h2 className="font-bold text-2xl">Special Offers</h2>
+          <h2 className="text-xl">Special Offers</h2>
           <button
           value="offers"
             onClick={handleSeeAll}
-            className="text-lg hover:text-secondary"
+            className="text-sm hover:text-secondary"
           >
             see all
           </button>
@@ -45,11 +47,11 @@ export const Home = () => {
       </div>
       <div className="mx-auto max-w-2xl lg:max-w-screen-2xl">
         <div className="flex justify-between pt-20 pb-10">
-          <h2 className="font-bold text-2xl">Popular</h2>
+          <h2 className="text-xl">Popular</h2>
           <button
           value="popular"
             onClick={handleSeeAll}
-            className="text-lg hover:text-secondary"
+            className="text-sm hover:text-secondary"
           >
             see all
           </button>
@@ -58,11 +60,11 @@ export const Home = () => {
       </div>
       <div className="mx-auto max-w-2xl lg:max-w-screen-2xl">
         <div className="flex justify-between pt-20 pb-10">
-          <h2 className="font-bold text-2xl">New Arrivals</h2>
+          <h2 className="text-xl">New Arrivals</h2>
           <button
           value="newest"
             onClick={handleSeeAll}
-            className="text-lg hover:text-secondary"
+            className="text-sm hover:text-secondary"
           >
             see all
           </button>

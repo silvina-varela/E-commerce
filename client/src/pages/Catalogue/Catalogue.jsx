@@ -1,11 +1,10 @@
 import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { filterProducts, getProducts, reset, setDefaultFilter, setDefaultSort, sortProducts } from "../../redux/actions";
+import { filterProducts, getProducts, reset, setDefaultFilter, sortProducts } from "../../redux/actions";
 import { Gallery } from "../../components/Gallery/Gallery";
 import { Sorter } from "../../components/Sorter/Sorter";
 import { Pagination } from "../../components/Pagination/Pagination";
 import { Filters } from "../../components/Filters/Filters";
-import {SearchBar} from "../../components/SearchBar/SearchBar";
 
 
 export const Catalogue = () => {
@@ -31,22 +30,13 @@ export const Catalogue = () => {
 
   useEffect(() => {
     dispatch(getProducts());
-    return () => {
-      dispatch(reset())
-      dispatch(setDefaultSort(false))
-    }
+    return () => dispatch(reset())
   }, [dispatch]);
 
   useEffect(() => {
+    if(defaultSort) return setShowing(defaultSort)
     setShowing(products);
-    if(defaultSort) {
-      dispatch(sortProducts(defaultSort))
-    }
-    
-    console.log(defaultSort)
-  }, [products]);
-
-  
+  }, [products, defaultSort]);
 
   useEffect(() => {
     if (filteredProducts[0]) return setShowing(filteredProducts);
@@ -56,7 +46,7 @@ export const Catalogue = () => {
   return (
     <div>
       
-      {/* <SearchBar pagination={pagination}/> */}
+      
       <div className="flex flex-row flex-wrap justify-center mt-14 mb-11">
       
       <Sorter pagination={pagination} />
@@ -64,7 +54,7 @@ export const Catalogue = () => {
         
       </div>
       
-      
+
       <Gallery productsShown={productsShown} />
       <Pagination
         currentPage={currentPage}
@@ -72,7 +62,6 @@ export const Catalogue = () => {
         products={totalProducts}
         pagination={pagination}
       />
-     
     </div>
   );
 };
