@@ -19,7 +19,7 @@ export const NavBar = () => {
             
           </div>{" "}
         </div>
-        <div className="flex space-x-4">
+        <div className="flex space-x-4 items-center">
           <SearchBar />
           {/* BOTONES CON LOS ÍCONOS PARA CARRITO, CORAZONES Y LOGIN */}
           <Link>
@@ -31,7 +31,7 @@ export const NavBar = () => {
               viewBox="0 0 24 24"
               strokeWidth="1.5"
               stroke="currentColor"
-              className="w-6 h-6 text-primary"
+              className="w-8 h-8 text-primary"
             >
               <path
                 strokeLinecap="round"
@@ -49,7 +49,7 @@ export const NavBar = () => {
               viewBox="0 0 24 24"
               strokeWidth="1.5"
               stroke="currentColor"
-              className="w-6 h-6 text-primary"
+              className="w-8 h-8 text-primary"
             >
               <path
                 strokeLinecap="round"
@@ -67,7 +67,7 @@ export const NavBar = () => {
               viewBox="0 0 24 24"
               strokeWidth="1.5"
               stroke="currentColor"
-              className="w-6 h-6 text-primary"
+              className="w-8 h-8 text-primary"
             >
               <path
                 strokeLinecap="round"
