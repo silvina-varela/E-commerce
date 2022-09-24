@@ -1,22 +1,59 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { SearchBar } from "../../components/SearchBar/SearchBar";
+import { SearchResults } from "./SearchResults";
 
 export const NavBar = () => {
+  const handleClick = (e) => {
+    e.preventDefault();
+    dispatch(getProductByName(""));
+  };
+
   return (
     <nav>
       <div className="text-center font-serif text-3xl mt-4 text-primary">
-        <Link to="./">NIVEADOS</Link>
+        <Link to="./" onClick={() => handleClick()}>
+          NIVEADOS
+        </Link>
       </div>
       <div className="flex flex-raw justify-around px-20 mt-4">
         <div className="text-primary">
           <div className="space-x-14 text-xl">
-            <Link className='hover:text-secondary' to="./home">Home</Link>
-            <Link className='hover:text-secondary' to="./catalogue">Catalogue</Link>
-            <Link className='hover:text-secondary' to="./createproduct">Create Product</Link>
-            <Link className='hover:text-secondary' to="./about">About</Link>
-            <Link className='hover:text-secondary' to="./register">Register</Link>
-            
+            <Link
+              className="hover:text-secondary"
+              to="./home"
+              onClick={() => handleClick()}
+            >
+              Home
+            </Link>
+            <Link
+              className="hover:text-secondary"
+              to="./catalogue"
+              onClick={() => handleClick()}
+            >
+              Catalogue
+            </Link>
+            <Link
+              className="hover:text-secondary"
+              to="./createproduct"
+              onClick={() => handleClick()}
+            >
+              Create Product
+            </Link>
+            <Link
+              className="hover:text-secondary"
+              to="./about"
+              onClick={() => handleClick()}
+            >
+              About
+            </Link>
+            <Link
+              className="hover:text-secondary"
+              to="./register"
+              onClick={() => handleClick()}
+            >
+              Register
+            </Link>
           </div>{" "}
         </div>
         <div className="flex space-x-4 items-center">
@@ -79,6 +116,8 @@ export const NavBar = () => {
           </Link>
         </div>
       </div>
+
+      <SearchResults />
     </nav>
   );
 };

@@ -7,10 +7,12 @@ export const NewArrivalsCard = ({
   rank,
   description,
   discount,
+  stock,
 }) => {
   const discounted = price - Math.round((price * discount) / 100);
   if (typeof rank === "object") rank = 0;
-  return (
+
+  if(stock > 0) return (
     <div className="flex-wrap">
       <div className="bg-tertiary shadow-sm w-90 h-52 bg-terceary rounded-2xl flex justify-center items-center space-x-1 hover:shadow-md">
         <div className="w-40 h-52 p-4 rounded-2xl flex justify-center items-center object-cover object-center">
@@ -56,6 +58,6 @@ export const NewArrivalsCard = ({
           </div>
         </div>
       </div>
-    </div>
+    </div> 
   );
 };
