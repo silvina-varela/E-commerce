@@ -66,7 +66,6 @@ export const CreateForm = () => {
             onChange={handleChange}
             onBlur={handleBlur}
             value={form.category}
-            placeholder='Select product category'
             required
           >
             <option></option>
