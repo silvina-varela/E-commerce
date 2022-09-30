@@ -89,15 +89,6 @@ router.post("/orders", async function(req, res) {
     }
 })
 
-router.post("/orders2",async function (req, res){
-
-    try {
-        res.status(200).json(await addOrder2(req.body));
-    } catch (error) {
-        res.status(400).json({ error: error.message });
-    }
-})
-
 router.post("/orders", async function(req, res) {
 
     const { userID, status } = req.body;

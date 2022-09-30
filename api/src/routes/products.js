@@ -78,7 +78,7 @@ router.delete("/products",async function (req, res){
  * modifico el producto recibido, golpeando por id
  */
 router.put("/products", async function (req, res){
-
+    
     const {id, newProduct} = req.body;
     
     try {

@@ -124,21 +124,6 @@ async function addOrder(userID, status) {
     }
 }
 
-async function addOrder2({cart, userID, status}) {
-
-    try {
-        await Order.create({
-            userID,
-            status,
-        });
-        return "Order create!, is being prosecuted.";
-
-    } catch (error) {
-        throw error;
-    }
-}
-
-
 /**
  * 
  * @param {*} orderID 
@@ -165,7 +150,6 @@ async function changeOrderStatus(orderID, status) {
 module.exports = {
     getAllOrders,
     addOrder,
-    addOrder2,
     getOrderDetails,
     changeOrderStatus,
     getUserOrders
