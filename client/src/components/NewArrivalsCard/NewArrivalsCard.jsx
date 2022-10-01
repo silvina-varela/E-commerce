@@ -32,10 +32,6 @@ export const NewArrivalsCard = ({
 
   if (typeof rank === "object") rank = 0;
 
-  useEffect(() => {
-    if (favorites.includes(id)) console.log("sdsd");
-  });
-
   if (stock > 0)
     return (
       <div
