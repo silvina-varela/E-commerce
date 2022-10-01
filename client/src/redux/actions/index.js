@@ -17,7 +17,7 @@ import {
   SEARCH_PRODUCT_DASHBOARD,
   GET_CART_BY_USERID,
   GET_PRODUCT_COMMENTS,
-  ADD_COMMENT, 
+  ADD_COMMENT,
   DELETE_COMMENT,
   GET_FAVORITES,
   ADD_FAVORITES,
@@ -27,6 +27,10 @@ import {
 } from "./actionTypes";
 import axios from "axios";
 import { async } from "@firebase/util";
+
+const userLogged = JSON.parse(localStorage.getItem('userLogged'));
+const userId = userLogged && userLogged.id ? userLogged.id : "";
+
 
 /* GET PRODUCTS */
 export const getProducts = () => {
@@ -283,9 +287,9 @@ export const editProduct = (data) => {
 export const postComment = (comment) => {
   return async function (dispatch) {
     try {
-      const postComment = axios.post(`/comments`, 
+      const postComment = axios.post(`/comments`,
         comment);
-        console.log(comment, 'post comment action')
+      console.log(comment, 'post comment action')
       dispatch({
         type: ADD_COMMENT,
         payload: postComment,
@@ -359,7 +363,7 @@ export const deleteComment = (comment) => {
   };
 }
 
-export const addFavorite = (productId,userId) => {
+export const addFavorite = (productId) => {
   return async (dispatch) => {
 
     const config = {
@@ -368,25 +372,25 @@ export const addFavorite = (productId,userId) => {
       headers: { 'Content-Type': 'application/json' },
       data: { userId, productId }
     };
-    if(userId)
-    await axios(config)
-      .then(() => {
-        dispatch(getFavorites(userId));
-        console.log("product added successfully!");
-      })
-      .catch((error) => {
-        console.log(error);
-      });
+    if (userId)
+      await axios(config)
+        .then(() => {
+          dispatch(getFavorites(userId));
+          console.log("product added successfully!");
+        })
+        .catch((error) => {
+          console.log(error);
+        });
 
-      return dispatch({
-        type: ADD_FAVORITES,
-        payload: productId,
-      });
+    return dispatch({
+      type: ADD_FAVORITES,
+      payload: productId,
+    });
 
   };
 };
 
-export const deleteFavorite = (productId,userId) => {
+export const deleteFavorite = (productId) => {
   return async (dispatch) => {
 
     const config = {
@@ -395,23 +399,23 @@ export const deleteFavorite = (productId,userId) => {
       headers: { 'Content-Type': 'application/json' },
       data: { userId, productId }
     }
-    if(userId)
-    await axios(config)
-      .then(() => {
-        dispatch(getFavorites(userId));
-        console.log("product removed successfully!");
-      })
-      .catch((error) => {
-        console.log(error);
-      });
+    if (userId)
+      await axios(config)
+        .then(() => {
+          dispatch(getFavorites(userId));
+          console.log("product removed successfully!");
+        })
+        .catch((error) => {
+          console.log(error);
+        });
 
-      return dispatch({
-        type: DELETE_FAVORITES,
-        payload: productId,
-      });
+    return dispatch({
+      type: DELETE_FAVORITES,
+      payload: productId,
+    });
   };
 
-  
+
 };
 
 /* GET USERS */
