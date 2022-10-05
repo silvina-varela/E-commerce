@@ -9,18 +9,20 @@ export const CheckoutBut = ({ summary, userID, cart }) => {
     ok: true,
   });
 
-  const sendOrder = () => {
+    const sendOrder = () => {
     const config = {
       method: "post",
-      url: "http://localhost:3001/orders",
+      url: "/orders",
       headers: {
         "Content-Type": "application/json",
       },
-      data: JSON.stringify({ status: "open", userID, cart }),
+      data: JSON.stringify({ status: "open", userID, address: destiny }),
     };
-    axios(config).catch((error) => {
-      console.log(error);
-    });
+    axios(config)
+      .then((resp) => dispatch(clearCart(userID)))
+      .catch((error) => {
+        console.log(error);
+      });
   };
 
   useEffect(() => {
