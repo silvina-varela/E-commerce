@@ -1,7 +1,7 @@
 import React, { useRef, useEffect, useState } from "react";
 import { Alert } from "./Alert";
 import axios from "axios";
-export const CheckoutBut = ({ summary, userID, cart }) => {
+export const CheckoutBut = ({ summary, userID, destiny }) => {
   const paypal = useRef();
   const [openAlert, setOpenAlert] = useState({
     condition: false,
@@ -9,15 +9,16 @@ export const CheckoutBut = ({ summary, userID, cart }) => {
     ok: true,
   });
 
-  const sendOrder = () =>  {
+  const sendOrder = () => {
     const config = {
       method: "post",
       url: "/orders",
       headers: {
         "Content-Type": "application/json",
       },
-      data: JSON.stringify({ status: "open", userID }),
+      data: JSON.stringify({ status: "open", userID, destiny }),
     };
+    console.log(destiny)
     axios(config).catch((error) => {
       console.log(error);
     });
@@ -34,7 +35,7 @@ export const CheckoutBut = ({ summary, userID, cart }) => {
                 description: "Niveados Products",
                 amount: {
                   currency_code: "USD",
-                  value: summary,
+                  value: 2,
                 },
               },
             ],
