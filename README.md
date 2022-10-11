@@ -1,7 +1,14 @@
-# Niveados
-Api -> npm install
-Start api -> npm start
+# E-commerce
 
-Client -> npm install -g yarn
-       -> yarn 
-Start client -> yarn dev
+Api 
+```
+npm install
+npm start
+```
+
+Client
+
+```
+npm install -g yarn
+yarn dev
+```
