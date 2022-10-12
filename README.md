@@ -38,7 +38,7 @@ This beauty e-commerce features a home page with three sections, a catalogue wit
 </div>
 </details>
 <details>
-  <summary>Register</summary>
+  <summary>Log In and Sign Up</summary>
   <div align="center"> 
  <img src="https://github.com/silvina-varela/E-commerce/blob/main/client/src/assets/screenshot03.png?raw=true" style="border:1px solid black;height:30%" alt="screenshot" />
 </div>
