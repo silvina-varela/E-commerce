@@ -6,7 +6,7 @@
 
 <!-- PROJECT LOGO -->
 <br />
-<div align="center">
+<div align="center" id="readme-top">
   <a href="https://github.com/silvina-varela/E-commerce">
     <img src="https://cdn-icons-png.flaticon.com/512/2495/2495414.png" alt="Logo" width="80" height="80">
   </a>
