@@ -89,14 +89,14 @@ This beauty e-commerce features a home page with three sections, a catalogue wit
 <!-- CONTACT -->
 ## Contributors 
 
-[![GitHub](https://img.shields.io/badge/-Silvina%20Varela-181717?logo=github&logoColor=ffffff)](https://github.com/silvina-varela)
-[![GitHub](https://img.shields.io/badge/-Kevin%20Carrillo-181717?logo=github&logoColor=ffffff)](https://github.com/KevinCarrillo93)
-[![GitHub](https://img.shields.io/badge/-Fátima%20Insaurralde-181717?logo=github&logoColor=ffffff)](https://github.com/FatuInsau)
-[![GitHub](https://img.shields.io/badge/-Arturo%20Kaadú-181717?logo=github&logoColor=ffffff)](https://github.com/arturokaadu)
-[![GitHub](https://img.shields.io/badge/-Victoria%20Raineri-181717?logo=github&logoColor=ffffff)](https://github.com/vickyraineri)
-[![GitHub](https://img.shields.io/badge/-Lucio%20Rebuffo-181717?logo=github&logoColor=ffffff)](https://github.com/luciorebuffo)
-[![GitHub](https://img.shields.io/badge/-Facundo%20Álvarez-181717?logo=github&logoColor=ffffff)](https://github.com/finstory)
-[![GitHub](https://img.shields.io/badge/-Yeiduin%20Romero-181717?logo=github&logoColor=ffffff)](https://github.com/Yeiduin)
+[![GitHub](https://img.shields.io/badge/-Silvina%20Varela-181717?logo=github&logoColor=ffffff)](https://github.com/silvina-varela)&nbsp;
+[![GitHub](https://img.shields.io/badge/-Kevin%20Carrillo-181717?logo=github&logoColor=ffffff)](https://github.com/KevinCarrillo93)&nbsp;
+[![GitHub](https://img.shields.io/badge/-Fátima%20Insaurralde-181717?logo=github&logoColor=ffffff)](https://github.com/FatuInsau)&nbsp;
+[![GitHub](https://img.shields.io/badge/-Arturo%20Kaadú-181717?logo=github&logoColor=ffffff)](https://github.com/arturokaadu)&nbsp;
+[![GitHub](https://img.shields.io/badge/-Victoria%20Raineri-181717?logo=github&logoColor=ffffff)](https://github.com/vickyraineri)&nbsp;
+[![GitHub](https://img.shields.io/badge/-Lucio%20Rebuffo-181717?logo=github&logoColor=ffffff)](https://github.com/luciorebuffo)&nbsp;
+[![GitHub](https://img.shields.io/badge/-Facundo%20Álvarez-181717?logo=github&logoColor=ffffff)](https://github.com/finstory)&nbsp;
+[![GitHub](https://img.shields.io/badge/-Yeiduin%20Romero-181717?logo=github&logoColor=ffffff)](https://github.com/Yeiduin)&nbsp;
 
 
 
