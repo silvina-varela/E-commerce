@@ -27,7 +27,13 @@ This beauty e-commerce features a home page with three sections, a catalogue wit
 ## :camera: Screenshots
 
 <div align="center"> 
-  <img src="https://github.com/silvina-varela/E-commerce/blob/main/client/src/assets/screenshot01.png?raw=true" alt="screenshot" />
+  <img src="https://github.com/silvina-varela/E-commerce/blob/main/client/src/assets/screenshot01.png?raw=true" alt="screenshot" style="border:1px solid black;width:80%"/>
+</div>
+<div align="center"> 
+  <img src="https://github.com/silvina-varela/E-commerce/blob/main/client/src/assets/screenshot02.png?raw=true?raw=true" style="border:1px solid black;width:80%" alt="screenshot" />
+</div>
+<div align="center"> 
+  <img src="https://github.com/silvina-varela/E-commerce/blob/main/client/src/assets/screenshot03.png?raw=true" style="border:1px solid black;height:50%" alt="screenshot" />
 </div>
 
 
