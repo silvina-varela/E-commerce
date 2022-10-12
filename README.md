@@ -25,16 +25,42 @@ This beauty e-commerce features a home page with three sections, a catalogue wit
 
 <!-- Screenshots -->
 ## :camera: Screenshots
-
-<div align="center"> 
+<details>
+  <summary>Home</summary>
+  <div align="center"> 
   <img src="https://github.com/silvina-varela/E-commerce/blob/main/client/src/assets/screenshot01.png?raw=true" alt="screenshot" style="border:1px solid black;width:80%"/>
 </div>
-<div align="center"> 
-  <img src="https://github.com/silvina-varela/E-commerce/blob/main/client/src/assets/screenshot02.png?raw=true?raw=true" style="border:1px solid black;width:80%" alt="screenshot" />
+</details>
+<details>
+  <summary>Filters</summary>
+  <div align="center"> 
+  <img src="https://github.com/silvina-varela/E-commerce/blob/main/client/src/assets/screenshot02.png?raw=true" style="border:1px solid black;width:80%" alt="screenshot" />
 </div>
-<div align="center"> 
-  <img src="https://github.com/silvina-varela/E-commerce/blob/main/client/src/assets/screenshot03.png?raw=true" style="border:1px solid black;height:50%" alt="screenshot" />
+</details>
+<details>
+  <summary>Register</summary>
+  <div align="center"> 
+ <img src="https://github.com/silvina-varela/E-commerce/blob/main/client/src/assets/screenshot03.png?raw=true" style="border:1px solid black;height:30%" alt="screenshot" />
 </div>
+</details>
+<details>
+  <summary>Admin Page</summary>
+   <div align="center"> 
+ <img src="https://github.com/silvina-varela/E-commerce/blob/main/client/src/assets/screenshot06.png?raw=true" style="border:1px solid black;width:80%" alt="screenshot" />
+</div>
+  
+ ---
+  
+  <div align="center"> 
+ <img src="https://github.com/silvina-varela/E-commerce/blob/main/client/src/assets/screenshot04.png?raw=true" style="border:1px solid black;width:80%" alt="screenshot" />
+</div>
+  
+  ---
+  
+  <div align="center"> 
+ <img src="https://github.com/silvina-varela/E-commerce/blob/main/client/src/assets/screenshot05.png?raw=true" style="border:1px solid black;width:80%" alt="screenshot" />
+</div>
+</details>
 
 
 <p align="right"><a href="#readme-top">🔝</a></p>
